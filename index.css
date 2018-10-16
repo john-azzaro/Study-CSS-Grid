@@ -1,3 +1,39 @@
 * {
     box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section Styles*/
+
+.section1 {
+    background-color: blue;
+}
+.section2 {
+    background-color: red;
+}
+.section3 {
+    background-color: green;
+}
+.section4 {
+    background-color: yellow;
+}
+.section5 {
+    background-color: grey;
+}
+
