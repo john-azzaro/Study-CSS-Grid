@@ -6,7 +6,29 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title header"
+    "sidebar content"
+    "sidebar content"
+    "sidebar footer"
+    ;
+}
+
+.title {
+    grid-area: title;
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.content {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer;
 }
 
 
@@ -17,23 +39,21 @@
 
 
 
+/* Section Styling*/
 
-
-/* Section Styles*/
-
-.section1 {
-    background-color: blue;
+.title {
+    background-color: lightblue;
 }
-.section2 {
-    background-color: red;
+.header {
+    background-color: orange;
 }
-.section3 {
-    background-color: green;
+.sidebar {
+    background-color: lightseagreen;
 }
-.section4 {
+.content {
     background-color: yellow;
 }
-.section5 {
-    background-color: grey;
+.footer {
+    background-color: lightgrey;
 }
 
