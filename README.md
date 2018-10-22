@@ -15,9 +15,9 @@ Now you can start defining columns and rows within the grid...
 
     - Inside "grid-template-columns" we can define how many columns we want inside the grid.
     - if you put in "1fr", which is 1 fraction, which means the entire width of this grid box is going to be 1 fraction.  So basically 1 column inside the grid.
-       \\  
-        >>  grid-template-columns: 1fr;
-       //
+       
+        ``` grid-template-columns: 1fr;```
+     
     - the result of this would show:
         [ 1 ]
         [ 2 ]
