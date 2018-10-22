@@ -47,7 +47,7 @@ Now you can start defining columns and rows within the grid...
        ```
           grid-template-columns: 200px 1fr;  -- the left column will maintain 200px.
           grid-template-columns: 20% 1fr;    -- the left column will maintain 20%. 
-          grid-template-columns: auto 1fr;   -- the left coluomn will shrink to fit the content we have inside the column.
+          grid-template-columns: auto 1fr;   -- the left coluomn will shrink to fit inside column.
         ```
 
 
