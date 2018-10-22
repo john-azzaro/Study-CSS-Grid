@@ -53,7 +53,7 @@ Now you can start defining columns and rows within the grid...
 
 ## GRID COLUMN START/END AND GRID ROWS  
 
-- Inside the grid we have the GRID ITEMS (i.e. <div class="section1">Title</div> ).
+- Inside the grid we have the GRID ITEMS (i.e. ``` <div class="section1">Title</div> ```).
 - with the GRID ITEMS, we can decide how much space should be taken up inside the grid.
 
 so suppose you want to style your title section...
