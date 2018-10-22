@@ -1,0 +1,91 @@
+## CSS Grid Study
+
+# What is the CSS Grid Study?
+Test CSS Grid functionality, notes, obeservations, etc.
+
+# What are the basics of CSS Grid?
+
+1. create  (class="grid") and nested divs (class="section1", etc).
+2. create styling for each section.
+3. create ruleset for .grid and display as grid (i.e. display: grid;).
+
+Now you can start defining columns and rows within the grid...
+
+4. In .grid, add a declaration called "grid-template-columns:"
+
+    - Inside "grid-template-columns" we can define how many columns we want inside the grid.
+    - if you put in "1fr", which is 1 fraction, which means the entire width of this grid box is going to be 1 fraction.  So basically 1 column inside the grid.
+       \\  
+        >>  grid-template-columns: 1fr;
+       //
+    - the result of this would show:
+        [ 1 ]
+        [ 2 ]
+        [ 3 ]
+        [ 4 ]
+        [ 5 ]
+
+    - if you want to have two columns, you add in another fraction.
+       \\
+        >> grid-template-columns: 1fr 1fr;
+       //
+    - the result of this would show:
+        [ 1 ]  [ 2 ]
+        [ 3 ]  [ 4 ]
+        [ 5 ]
+
+    - so when it comes to columns and rows.
+    - in the case of a single columns, we have a single column and 2 "lines" to the left and right of the column.
+      \\
+        | [ 1 ] |
+      //
+    - in the case of a double column, we have two column and 3 lines, one on the far left, one in the middle between the columns, and one to the right.
+
+    - you can use different forms of measurment here.  The fr's can be changed depending on your need. For example:
+       \\
+        >>  grid-template-columns: 200px 1fr;  -- the left column will maintain 200px.
+        >>  grid-template-columns: 20% 1fr;    -- the left column will maintain 20%. 
+        >>  grid-template-columns: auto 1fr;   -- the left coluomn will shrink to fit the content we have inside the column.
+
+
+
+## GRID COLUMN START/END AND GRID ROWS  
+
+- Inside the grid (.grid) we have the GRID ITEMS (i.e. <div class="section1">Title</div> ).
+- with the GRID ITEMS, we can decide how much space should be taken up inside the grid.
+
+so suppose you want to style your title section...
+
+1. create a ruleset for your title section:
+    - now suppose you want to span the title from the first column to the second column.
+
+2. add the declaration that says which LINE to start (i.e. the first line)  >>  grid-column-start: 1;
+3. add another declaration of which LINE to end (i.e. the third line)       >>  grid-column-end: 3;  
+
+HOWEVER, there is a more concise way to do this:
+    >> grid-column: 1 / 3;
+        - this means that we start at line one and then go to (i.e. the forward slash) line 3.
+
+ALSO, we can do the same thing in by using span.
+    >> grid-column-end: span 2;
+        - this means that the column can span two lines inside the grid.
+
+We can also do the same thing but to ROWS.
+    .title {
+        grid-column-end: 1 / 3;
+        grid-row-end: span 2;
+    }
+
+## Grid Area
+
+so above about a bunch of ways to put content in the grid, but it can be difficult to keep track of all the numbers, columns, rows, etc.
+a MUCH easier way is to use GRID AREA, which you then dont have to worry about columns or rows.
+
+1. 
+.title {
+    grid-area: title;
+}
+
+2. then we create 5 different rulesets for each of our sections (i.e. title, header, etc.).
+
+3. then we go to our .grid ruleset
