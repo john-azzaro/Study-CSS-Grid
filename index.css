@@ -1,19 +1,25 @@
 * {
     box-sizing: border-box;
-    margin: 0;  /* Reset rule - set sall elements to x... helpful for making consistent designs*/
+    margin: 0;  /* Reset rule - sets all elements to x... helpful for making consistent designs*/
     padding: 0;  /* Reset rule*/
     height: 100%; /* Allows the body to grow as high as the content requires*/
 }
 
+/*
+Force the body to not get any smaller than then window height.
+-----
 body {
     min-height: 100%;
 }
+*/
 
 
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2px;               /* space between rows*/
+    column-gap: 2px;                 /* space between columns*/
     grid-template-areas: 
     "title title"
     "sidebar header"
@@ -22,9 +28,10 @@ body {
     ;
 }
 
+
+/* Grid area ID's for .grid (above) */
 .title {
     grid-area: title;
-
 }
 .header {
     grid-area: header;
@@ -40,15 +47,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
 /* Section Styling*/
-
 .title {
     background-color: lightblue;
 }
