@@ -1,15 +1,22 @@
 * {
     box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
+    margin: 0;  /* Reset rule - set sall elements to x... helpful for making consistent designs*/
+    padding: 0;  /* Reset rule*/
+    height: 100%; /* Allows the body to grow as high as the content requires*/
 }
+
+body {
+    min-height: 100%;
+}
+
+
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "title header"
-    "sidebar content"
+    "title title"
+    "sidebar header"
     "sidebar content"
     "sidebar footer"
     ;
@@ -17,6 +24,7 @@
 
 .title {
     grid-area: title;
+
 }
 .header {
     grid-area: header;
