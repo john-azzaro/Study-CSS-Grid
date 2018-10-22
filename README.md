@@ -1,9 +1,9 @@
-## CSS Grid Study
+# CSS Grid Study
 
-# What is the CSS Grid Study?
+## What is the CSS Grid Study?
 Test CSS Grid functionality, notes, obeservations, etc.
 
-# What are the basics of CSS Grid?
+## What are the basics of CSS Grid?
 
 1. create  (class="grid") and nested divs (class="section1", etc).
 2. create styling for each section.
