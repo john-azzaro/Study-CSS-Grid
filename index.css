@@ -20,8 +20,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2px;                   /* space between rows*/
     column-gap: 2px;                 /* space between columns*/
-/*  padding-left: 20px; */
-/*  padding-right: 20px;   */
+/*  padding-left: 20px;     */        /* border space left */
+/*  padding-right: 20px;   */        /* border space right */
     grid-template-areas: 
     "title title"
     "sidebar header"
@@ -34,7 +34,6 @@ body {
     "sidebar footer"
     ;
 }
-
 
 /* Grid area ID's for .grid (above) */
 .title {
@@ -73,11 +72,8 @@ body {
 
 
 
-
-/* media Query for mobile*/
-
-@media (max-width: 600px) {
-
+/* media Query for mobile PORTRAIT*/
+@media only screen and (max-width: 450px)  {
     .grid {
         display: grid;
         grid-template-columns: 1fr ;
@@ -87,13 +83,14 @@ body {
         "title"
         "sidebar"
         "sidebar"
+        "sidebar"
         "header"
         "header"
         "content"
         "content"
-        "footer"
+        "content"
         "footer"
         ;
     }
-
 }
+
