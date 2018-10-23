@@ -120,3 +120,8 @@ body {
                 height: 200px;
             }
     
+
+    how to center text in grid divs:
+            display: flex;
+            align-items: center;
+            justify-content: center;
