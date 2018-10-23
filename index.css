@@ -3,12 +3,48 @@
     margin: 0;  /* Reset rule - sets all elements to x... helpful for making consistent designs*/
     padding: 0;  /* Reset rule*/
     height: 100%; /* Allows the body to grow as high as the content requires*/
+    background-color: rgb(245, 245, 245);
+    font-family: 'Roboto', sans-serif;
 }
 
 
-.modules {
-    padding-top: 20px;
+/* Mobile default */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "powerballmodule"
+    "powerballmodule"
+    "powerballmodule"
+    "megaballmodule"
+    "megaballmodule"
+    "megaballmodule"
+    ;
 }
+        .title {
+            grid-area: title;
+            background-color: rgb(245, 245, 245);;
+            min-height: 50px;
+            max-height: 190px;
+        }
+        .header {
+            grid-area: header;
+            background-color: orange;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(245, 245, 245);
+        }
+        .content {
+            grid-area: content;
+            background-color: yellow;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: lightgrey;
+        }
+
 
 .powerballmodule {
     display: grid;
@@ -27,33 +63,36 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
+    min-height: 150px;
     max-height: 190px;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
-
-.powerballname {
-    grid-area: powerballname;
-    background-color: rgb(238, 145, 148);
-    font-size: 28px;
-}
-.powerballnumbers {
-    grid-area: powerballnumbers;
-    background-color: rgb(250, 157, 160);
-    font-size: 18px;  
-}
-.powerballnextdrawing {
-    grid-area: powerballnextdrawing;
-    background-color: rgb(250, 157, 160);
-}
-.powerballhistory {
-    grid-area: powerballhistory;
-    background-color: rgb(250, 157, 160);
-}
-.powerballstrategy {
-    grid-area:powerballstrategy;
-    background-color: rgb(241, 139, 142);
-}
+        .powerballname {
+            grid-area: powerballname;
+            background-color: rgb(238, 145, 148);
+            font-size: 22px;
+        }
+        .powerballnumbers {
+            grid-area: powerballnumbers;
+            background-color: rgb(250, 157, 160);
+            font-size: 20px;  
+        }
+        .powerballnextdrawing {
+            grid-area: powerballnextdrawing;
+            background-color: rgb(250, 157, 160);
+            font-size: 14px; 
+        }
+        .powerballhistory {
+            grid-area: powerballhistory;
+            background-color: rgb(250, 157, 160);
+            font-size: 14px; 
+        }
+        .powerballstrategy {
+            grid-area:powerballstrategy;
+            background-color: rgb(241, 139, 142);
+            font-size: 14px; 
+        }
 
 
 .megamillionsmodule {
@@ -73,134 +112,176 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
+    min-height: 150px;
     max-height: 190px;
     color: white;
     font-size: 16px;
-}
 
-.megamillionsname {
-    grid-area: megamillionsname;
-    background-color: rgb(230, 182, 106);
-    font-size: 28px;
 }
-.megamillionsnumbers {
-    grid-area: megamillionsnumbers;
-    background-color: rgb(243, 188, 100);
-    font-size: 18px;
-}
-.megamillionsnextdrawing {
-    grid-area: megamillionsnextdrawing;
-    background-color: rgb(243, 188, 100);
-}
-.megamillionshistory {
-    grid-area: megamillionshistory;
-    background-color: rgb(243, 188, 100);
-}
-.megamillionsstrategy {
-    grid-area: megamillionsstrategy;
-    background-color: rgb(232, 172, 77);
-}
-
+        .megamillionsname {
+            grid-area: megamillionsname;
+            background-color: rgb(230, 182, 106);
+            font-size: 22px;
+        }
+        .megamillionsnumbers {
+            grid-area: megamillionsnumbers;
+            background-color: rgb(243, 188, 100);
+            font-size: 20px;
+        }
+        .megamillionsnextdrawing {
+            grid-area: megamillionsnextdrawing;
+            background-color: rgb(243, 188, 100);
+            font-size: 14px; 
+        }
+        .megamillionshistory {
+            grid-area: megamillionshistory;
+            background-color: rgb(243, 188, 100);
+            font-size: 14px; 
+        }
+        .megamillionsstrategy {
+            grid-area: megamillionsstrategy;
+            background-color: rgb(232, 172, 77);
+            font-size: 14px; 
+        }
 
 .googlemapmodule {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "googlemap"
-    ;
     width: 80%;
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
+    min-height: 190px;
     max-height: 200px;
 }
+        .googlemap {
+            grid-area: googlemap;
+            background-color: grey;
 
-.googlemap {
-    grid-area: googlemap;
-    background-color: grey;
-    height: 250px;
-
-
-}
-
-.maplocations {
-    grid-area: maplocations;
-    background-color: rgb(131, 176, 212);
-
-}
+        }
 
 
 
-
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-/*    grid-gap: 2px;       */            /* space between rows*/
-/*    column-gap: 2px;       */          /* space between columns*/
-/*  padding-left: 20px;     */        /* border space left */
-/*  padding-right: 20px;   */        /* border space right */
-    grid-template-areas: 
-    "title"
-    "sidebar"
-    "sidebar"
-    "sidebar"
-    "header"
-    "header"
-    "content"
-    "content"
-    "footer"
-    "footer"
-    ;
-}
-
-/* Grid area ID's for .grid (above) */
-.title {
-    grid-area: title;
-    background-color: rgb(251, 251, 251);;   
-}
-.header {
-    grid-area: header;
-    background-color: orange;
-}
-.sidebar {
-    grid-area: sidebar;
-    background-color: rgb(245, 245, 245);
-}
-.content {
-    grid-area: content;
-    background-color: yellow;
-}
-.footer {
-    grid-area: footer;
-    background-color: lightgrey;
-}
-
-
-
-
-
-
-
-@media only screen and (min-width: 475px)  {
+@media only screen and (min-width: 600px)  {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-     /*   grid-row-gap: 2px;  */             /* space between rows*/
-     /*    column-gap: 2px;      */           /* space between columns*/
         grid-template-areas: 
         "title title"
-        "sidebar header"
-        "sidebar header"
-        "sidebar content"
-        "sidebar content"
-        "sidebar content"
-        "sidebar footer"
-        "sidebar footer"
-        "sidebar footer"
+        "title title"
+        "powerballmodule megaballmodule"
+        "powerballmodule megaballmodule"
+        "powerballmodule megaballmodule"
+        "powerballmodule megaballmodule"
         ;
     }
+   
+    .powerballmodule {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "powerballname powerballname"
+        "powerballnumbers powerballnumbers"
+        "powerballnextdrawing powerballnextdrawing"
+        "powerballhistory powerballstrategy"
+        ;    
+        align-items: center;
+        width: 80%;
+        padding-bottom: 20px;
+        grid-gap: 1px; 
+        column-gap: 1px;
+        margin-right: 20px;
+        max-width: 400px;
+        min-height: 150px;
+        max-height: 250px;
+        color: white;
+        font-size: 14px;
+    }
+            .powerballname {
+                grid-area: powerballname;
+                background-color: rgb(238, 145, 148);
+                font-size: 26px;
+            }
+            .powerballnumbers {
+                grid-area: powerballnumbers;
+                background-color: rgb(250, 157, 160);
+                font-size: 24px;  
+            }
+            .powerballnextdrawing {
+                grid-area: powerballnextdrawing;
+                background-color: rgb(250, 157, 160);
+                font-size: 16px; 
+            }
+            .powerballhistory {
+                grid-area: powerballhistory;
+                background-color: rgb(250, 157, 160);
+                font-size: 14px; 
+            }
+            .powerballstrategy {
+                grid-area:powerballstrategy;
+                background-color: rgb(241, 139, 142);
+                font-size: 14px; 
+            }
+    
+    
+    .megamillionsmodule {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "megamillionsname megamillionsname"
+        "megamillionsnumbers megamillionsnumbers"
+        "megamillionsnextdrawing megamillionsnextdrawing"
+        "megamillionshistory megamillionsstrategy"
+        ;    
+        width: 80%;
+        padding-bottom: 20px;
+        grid-gap: 1px; 
+        column-gap: 1px;
+        text-align: center;
+        margin-left: 20px;
+        max-width: 400px;
+        min-height: 150px;
+        max-height: 250px;
+        color: white;
+        font-size: 16px;
+    }
+                .megamillionsname {
+                grid-area: megamillionsname;
+                background-color: rgb(230, 182, 106);
+                font-size: 26px;
+            }
+            .megamillionsnumbers {
+                grid-area: megamillionsnumbers;
+                background-color: rgb(243, 188, 100);
+                font-size: 24px;
+            }
+            .megamillionsnextdrawing {
+                grid-area: megamillionsnextdrawing;
+                background-color: rgb(243, 188, 100);
+                font-size: 16px; 
+            }
+            .megamillionshistory {
+                grid-area: megamillionshistory;
+                background-color: rgb(243, 188, 100);
+                font-size: 14px; 
+            }
+            .megamillionsstrategy {
+                grid-area: megamillionsstrategy;
+                background-color: rgb(232, 172, 77);
+                font-size: 14px; 
+            }
+
+ 
+    
+
+    
+    
+
+
+
+
+
+
+
 }
 
 
