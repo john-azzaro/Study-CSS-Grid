@@ -15,36 +15,18 @@
     grid-template-areas: 
     "title"
     "powerballmodule"
-    "powerballmodule"
-    "powerballmodule"
     "megaballmodule"
-    "megaballmodule"
-    "megaballmodule"
+    "mapmodule"
     ;
 }
-        .title {
-            grid-area: title;
-            background-color: rgb(245, 245, 245);;
-            min-height: 50px;
-            max-height: 190px;
-        }
-        .header {
-            grid-area: header;
-            background-color: orange;
-        }
-        .sidebar {
-            grid-area: sidebar;
-            background-color: rgb(245, 245, 245);
-        }
-        .content {
-            grid-area: content;
-            background-color: yellow;
-        }
-        .footer {
-            grid-area: footer;
-            background-color: lightgrey;
-        }
 
+
+.title {
+    grid-area: title;
+    background-color: rgb(245, 245, 245);
+    min-height: 50px;
+    max-height: 190px;
+}    
 
 .powerballmodule {
     display: grid;
@@ -64,7 +46,7 @@
     margin-right: auto;
     max-width: 350px;
     min-height: 150px;
-    max-height: 190px;
+    max-height: 250px;
     color: white;
     font-size: 14px;
 }
@@ -113,7 +95,7 @@
     margin-right: auto;
     max-width: 350px;
     min-height: 150px;
-    max-height: 190px;
+    max-height: 250px;
     color: white;
     font-size: 16px;
 
@@ -144,21 +126,39 @@
             font-size: 14px; 
         }
 
-.googlemapmodule {
+.mapmodule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "maparea maparea"
+    "maparea maparea"    
+    "maparea maparea"
+    "maparea maparea"
+    "maplocations maplocations"
+     ;    
     width: 80%;
     padding-bottom: 20px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
-    min-height: 190px;
-    max-height: 200px;
+    min-height: 150px;
+    max-height: 190px;
+    color: white;
+    font-size: 16px;
 }
-        .googlemap {
-            grid-area: googlemap;
-            background-color: grey;
+                .maparea {
+                    grid-area: maparea;
+                    background-color: rgb(125, 128, 125);
+                    font-size: 12px;
+                }
+                .maplocations {
+                    grid-area: maplocations;
+                    background-color: rgb(132, 176, 213);
+                    font-size: 14px;
+                }
 
-        }
-
+    
 
 
 @media only screen and (min-width: 600px)  {
@@ -166,14 +166,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "title title"
-        "title title"
+        "title title "
         "powerballmodule megaballmodule"
-        "powerballmodule megaballmodule"
-        "powerballmodule megaballmodule"
-        "powerballmodule megaballmodule"
+        "mapmodule mapmodule"
         ;
     }
+        .title {
+            grid-area: title;
+            background-color: rgb(245, 245, 245);
+            min-height: 50px;
+            max-height: 190px;
+        }    
    
     .powerballmodule {
         display: grid;
@@ -244,7 +247,7 @@
         color: white;
         font-size: 16px;
     }
-                .megamillionsname {
+            .megamillionsname {
                 grid-area: megamillionsname;
                 background-color: rgb(230, 182, 106);
                 font-size: 26px;
@@ -270,18 +273,30 @@
                 font-size: 14px; 
             }
 
- 
-    
 
-    
-    
+.mapmodule {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "maparea"
+    "maparea"    
+    "maparea"
+    "maparea"
+    "maplocations"
+    ;
+   align-self: start;
+   grid-column: 1 / span 2;
 
-
-
-
-
-
-
+}
+            .maparea {
+                grid-area: maparea;
+                background-color: rgb(125, 128, 125);
+            }
+            .maplocations {
+                grid-area: maplocations;
+                background-color: rgb(132, 176, 213);
+                font-size: 14px;
+            }
 }
 
 
