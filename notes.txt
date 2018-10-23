@@ -87,3 +87,12 @@ a MUCH easier way is to use GRID AREA, which you then dont have to worry about c
 
 3. then we go to our .grid ruleset
 
+
+Addtional notes:
+
+
+Force the body to not get any smaller than then window height.
+-----
+body {
+    min-height: 100%;
+}
