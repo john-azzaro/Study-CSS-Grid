@@ -27,7 +27,6 @@
     grid-template-areas: 
     "logo"
     ;    
-    width: 100%;
     padding-bottom: 20px;   
     background-color: rgb(245, 245, 245);
 }
@@ -77,8 +76,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;  
-            
+            font-size: 20px;     
         }
         .powerballnextdrawing {
             grid-area: powerballnextdrawing;
@@ -215,14 +213,14 @@
         grid-template-areas: 
         "logomodule logomodule"
         "powerballmodule megaballmodule"
+        "powerballmodule megaballmodule"
         "mapmodule mapmodule"
+ 
         ;
     }
 
     .logomodule {
         grid-area: logomodule;
-        min-height: 50px;
-        max-height: 100px;
     }    
    
     .powerballmodule {
@@ -281,16 +279,14 @@
     "maparea"
     "maplocations"
     ;
-   align-self: start;
    grid-column-end: span 2;
    max-width: 93ch;
    max-height: 350px;
-
-
 }
             .maparea {
                 grid-area: maparea;
                 background-color: rgb(125, 128, 125);
+
             }
             .maplocations {
                 grid-area: maplocations;
