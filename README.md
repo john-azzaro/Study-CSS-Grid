@@ -1,7 +1,7 @@
 # CSS Grid Study 
 
 ## What is the CSS Grid Study?
-Test CSS Grid functionality, notes, obeservations, etc.
+CSS Grid Study is collection of sample studies, tips, tricks, and observations about CSS Grid.  
 
 ## What are the basics of CSS Grid?
 
