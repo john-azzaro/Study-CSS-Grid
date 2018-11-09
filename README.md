@@ -7,7 +7,7 @@ CSS Grid Study is collection of sample studies, tips, tricks, and observations a
 
 ## What are the basics of CSS Grid?
 
-1. Create  (class="grid") and nested divs (class="section1", etc) in your index.html file.
+1. Create  (class="grid") and nested divs (class="section1", etc) in your HTML file.
    ```
    <main class="grid">
         <section class="section1"></section>
@@ -15,14 +15,14 @@ CSS Grid Study is collection of sample studies, tips, tricks, and observations a
         <section class="section3"></section>
    </main>
    ```
-2.  Ceate ruleset for .grid and display as grid (i.e. display: grid;).
+2.  Ceate ruleset for .grid and display as grid (i.e. display: grid;) in your CSS file.
     ```
     .grid {
       display: grid;
     }
     ```
 
-3. Create styling rulesets for each section in your index.css file.
+3. Create styling rulesets for each section in your CSS file.
    ```
    .section1 {
     // Declarations
