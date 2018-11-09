@@ -3,11 +3,39 @@
 ## What is the CSS Grid Study?
 CSS Grid Study is collection of sample studies, tips, tricks, and observations about CSS Grid.  
 
+<br>
+
 ## What are the basics of CSS Grid?
 
-1. create  (class="grid") and nested divs (class="section1", etc).
-2. create styling for each section.
-3. create ruleset for .grid and display as grid (i.e. display: grid;).
+1. Create  (class="grid") and nested divs (class="section1", etc) in your index.html file.
+   ```
+   <main class="grid">
+        <section class="section1"></section>
+        <section class="section2"></section>
+        <section class="section3"></section>
+   </main>
+   ```
+2.  Ceate ruleset for .grid and display as grid (i.e. display: grid;).
+    ```
+    .grid {
+      display: grid;
+    }
+    ```
+
+3. Create styling rulesets for each section in your index.css file.
+   ```
+   .section1 {
+    // Declarations
+   }
+   
+    .section2{
+    // Declarations
+   }
+   
+    .section3{
+    // Declarations
+   }
+   ```
 
 Now you can start defining columns and rows within the grid...
 
@@ -21,20 +49,20 @@ Now you can start defining columns and rows within the grid...
         ```
      
     - the result of this would show:
-        [ 1 ]
-        [ 2 ]
-        [ 3 ]
-        [ 4 ]
-        [ 5 ]
+     * [ 1 ]
+     * [ 2 ]
+     * [ 3 ]
+     * [ 4 ]
+     * [ 5 ]
 
     - if you want to have two columns, you add in another fraction.
       ```
          grid-template-columns: 1fr 1fr;
        ```
     - the result of this would show:
-        [ 1 ]  [ 2 ]
-        [ 3 ]  [ 4 ]
-        [ 5 ]
+     *  [ 1 ]  [ 2 ]
+     *  [ 3 ]  [ 4 ]
+     *  [ 5 ]
 
     - so when it comes to columns and rows.
     - in the case of a single columns, we have a single column and 2 "lines" to the left and right of the column.
@@ -50,6 +78,7 @@ Now you can start defining columns and rows within the grid...
           grid-template-columns: auto 1fr;   -- the left coluomn will shrink to fit inside column.
         ```
 
+<br>
 
 ## GRID COLUMN START/END AND GRID ROWS  
 
@@ -84,6 +113,8 @@ We can also do the same thing but to ROWS.
         grid-row-end: span 2;
     }
 ```
+
+<br>
 
 ## Grid Area
 
