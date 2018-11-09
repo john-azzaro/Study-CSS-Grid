@@ -49,21 +49,23 @@ Now you can start defining columns and rows within the grid...
         ```
      
     - the result of this would show:
-     * [ 1 ]
-     * [ 2 ]
-     * [ 3 ]
-     * [ 4 ]
-     * [ 5 ]
-
+       ```
+        [ 1 ]
+        [ 2 ]
+        [ 3 ]
+        [ 4 ]
+        [ 5 ]
+       ```
     - if you want to have two columns, you add in another fraction.
       ```
          grid-template-columns: 1fr 1fr;
        ```
     - the result of this would show:
-     *  [ 1 ]  [ 2 ]
-     *  [ 3 ]  [ 4 ]
-     *  [ 5 ]
-
+       ```
+        [ 1 ]  [ 2 ]
+        [ 3 ]  [ 4 ]
+        [ 5 ]
+       ```
     - so when it comes to columns and rows.
     - in the case of a single columns, we have a single column and 2 "lines" to the left and right of the column.
       
