@@ -12,13 +12,13 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
    * Everything inside the grid container are the grid container's children
    
    Example:
-    ```
-        <main >                        (main is the parent container)
-            <section>...</section>     (sections are the child items)
-            <section>...</section>
-            <section>...</section>
-        </main>
-    ```
+   ```
+    <main >                        (main is the parent container)
+        <section>...</section>     (sections are the child items)
+        <section>...</section>
+        <section>...</section>
+    </main>
+   ```
 
 ## Positioning and Aligning Content to the Grid
 
@@ -30,10 +30,10 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 ## Setting Up The Grid Container
 
 In your HTML document, create a parent container and a few child grid items.
-    ```
-        <main class="">
-            <section class="item">1</section>
-            <section class="item">2</section>
-            <section class="item">3</section>
-        </main>
-    ```
+```
+     <main class="">
+        <section class="item">1</section>
+        <section class="item">2</section>
+        <section class="item">3</section>
+    </main>
+```
