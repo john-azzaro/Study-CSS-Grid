@@ -7,6 +7,8 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 * **Grid CONTAINERS**
    * The grid container esbalishes how the grid will be formatted.
    * It also manages how all the child elements are spaced, sized, and aligned.
+   
+<br>
 
 * **Grid ITEMS**
    * Everything inside the grid container are the grid container's children
@@ -20,12 +22,16 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
     </main>
    ```
 
+<br>
+
 ## Positioning and Aligning Content to the Grid
 
 * The grid is formed by intersecting sets of hrozontal and veritcal lines call **grid lines**.
 * Grid lines divide the contianer space into **columns and rows**, or areas in which items are aligned and placed.
 * **Horizontal grid lines** position **rows**.
 * **Veritical gird lines** position **columns**. 
+
+<br>
 
 ## Setting Up The Grid Container
 
