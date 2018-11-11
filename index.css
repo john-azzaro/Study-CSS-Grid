@@ -1,18 +1,46 @@
 * {
     box-sizing: border-box;                                /* Make sure sizing repsects the dimensions explicitly stated */                  
     margin: 0;                                             /* Reset Rule: sets all elements to 0 margin. Helpful for making consistent designs.*/
-    padding: 0;                                            /* Reset Rule: sets all elements to 0 padding. Helpful for making consistent designs.*/                                                         
+    padding: 0;                                            /* Reset Rule: sets all elements to 0 padding. Helpful for making consistent designs.*/                                                      
 }
 
 
 .grid {
-    display: grid;
+    display: grid;                                                                       
+    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);      
+    grid-template-rows: minmax(100px, 125px) 70% auto;
+    height: 100vh;  
+    grid-column-gap: 0;                                     
+    grid-row-gap: 0;   
+    grid-template-areas:
+    "item1 item1 item1"
+    "item2 item3 item4"   
+    "item5 item5 item5"
+    ;                     
+}
 
- /* GAPS */
-    grid-column-gap: 0;                                     /* creates gap between adjacent columns (but not on the outer edges of the grid */
-    grid-row-gap: 0;                                        /* creates gap between adjacent columns (but not on the outer edges of the grid */
-    /* grid-gap: 15px 35px; */                              /* shorthand property combining the above two rules.  the first value sets row gap, second value sets column gap*/   
 
-    grid-template-columns: 200px auto 200px;    
-    max-width: 800px;
+.item1 {
+    grid-area: item1;
+    background-color: lightblue;
+}
+
+.item2 {
+    grid-area: item2;
+    background-color: lightcoral;   
+}
+
+.item3 {
+    grid-area: item3;
+    background-color: aquamarine;
+}
+
+.item4 {
+    grid-area: item4;
+    background-color: lightslategrey;   
+}
+
+.item5 {
+    grid-area: item5;
+    background-color: lightyellow;
 }

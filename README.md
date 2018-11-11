@@ -24,7 +24,10 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
    ```
 
 * **Grid LINES**
-   * Lines between the grid items (within the gird container).
+   * The grid is formed by intersecting sets of hrozontal and veritcal lines call **grid lines**.
+   * Grid lines divide the contianer space into **columns and rows**, or areas in which items are aligned and placed.
+   * **Horizontal grid lines** position **rows**.
+   * **Veritical grid lines** position **columns**. 
    * Grid column lines start from left to right from 1 to X.
    * Grid row lines starts from top to bottom from 1 to X.
    * A grid line is not a complete column or row, they only outline the row or the column.
@@ -33,29 +36,52 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 
     Example:
     ```
-         ___________________________________         \\ 1 horizontal row grid line
-        | [column1] | [column2] | [column3] |        \\ 3 columns, 4 grid lines. 
-         ___________________________________         \\ 1 horizontal row grid line                      
-        | [column1] | [column1] | [column1] |        \\ 3 columns, 4 grid lines. 
-         ___________________________________         \\ 1 horizontal row grid line
+        1           2           3           4
+     1   ___________________________________         \\ First horizontal row grid line.
+        | [column1] | [column2] | [column3] |        \\ 3 columns (tracks), 4 grid lines. 
+     2   ___________________________________         \\ Second horizontal row grid line.                      
+        | [column1] | [column1] | [column1] |        
+     3   ___________________________________         \\ Third horizontal row grid line.
     ```
 
 
-
-
-* SUMMARY: The grid CONTAINER (".grid") contains all the child ITEMS within it.  The grid template COLUMNS and gird template ROWS provide us with numbered grid LINES that we use for positioning the items.
-
+* SUMMARY: 
+  The grid CONTAINER (".grid") contains all the child ITEMS within it.  The grid template COLUMNS and gird template ROWS provide us with numbered grid LINES that we use for positioning the items.
 
 <br>
 
-## Positioning and Aligning Content to the Grid
+minmax: 
 
-* The grid is formed by intersecting sets of hrozontal and veritcal lines call **grid lines**.
-* Grid lines divide the contianer space into **columns and rows**, or areas in which items are aligned and placed.
-* **Horizontal grid lines** position **rows**.
-* **Veritical grid lines** position **columns**. 
+* This lets you set the grid track's minimum and maxium size.
+* minimum size will let you make sure the content doesnt become to small or narrow where you cant see it.
+* maximum size will let you make sure the content doesnt become to wide or tall.
+* using minmax will help you build layouts that adapt to a wide range of screen sizes.
 
-<br>
+* to use minmax, use it in the ``` grid-template-columns ``` declaration.
+```
+grid-template-columns: minmax() 1fr 1fr;   // 3 tracks, first is a minmax, second and third are set to 1fr.
+```
+* minmax accepts two values, a minimum (first) and a maximum (last).  
+* the value for min needs to be smaller than the value for maximum (otherwise browser will ignore the max value).
+```
+grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ; 
+```
+* In the example above, there are three tracks.  the first track has a minmax function where the column will collapse no smaller than 300px.  The max is 1fr, maeing it will exand as needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Setting Up The Grid Container
 
