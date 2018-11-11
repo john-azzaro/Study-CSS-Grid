@@ -14,22 +14,34 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 * **Grid ITEMS**
    * Everything inside the grid container are the grid container's children
    
+   Example:
+   ```
+    <main class="grid">                             \\ The main is the parent container
+        <section class="childone">...</section>     \\ The three sections are the child items 
+        <section class="childtwo">...</section>
+        <section class="childthree">...</section>
+    </main>
+   ```
+
 * **Grid LINES**
    * Lines between the grid items (within the gird container).
    * Grid column lines start from left to right from 1 to X.
    * Grid row lines starts from top to bottom from 1 to X.
    * A grid line is not a complete column or row, they only outline the row or the column.
       * For example, column 1 would have 2 grid lines on the left and right side.
-      * As another example, a three column layout would have 4 gird lines.
+      * As another example, a three column layout would have 4 grid lines.
 
-   Example:
-   ```
-    <main class="grid">            \\ *main is the parent container* \\
-        <section>...</section>     \\ sections are the child items \\
-        <section>...</section>
-        <section>...</section>
-    </main>
-   ```
+    Example:
+    ```
+         ___________________________________         \\ 1 horizontal row grid line
+        | [column1] | [column2] | [column3] |        \\ 3 columns, 4 grid lines. 
+         ___________________________________         \\ 1 horizontal row grid line                      
+        | [column1] | [column1] | [column1] |        \\ 3 columns, 4 grid lines. 
+         ___________________________________         \\ 1 horizontal row grid line
+    ```
+
+
+
 
 * SUMMARY: The grid CONTAINER (".grid") contains all the child ITEMS within it.  The grid template COLUMNS and gird template ROWS provide us with numbered grid LINES that we use for positioning the items.
 
