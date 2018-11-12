@@ -1,21 +1,20 @@
 * {
-    box-sizing: border-box;                                /* Make sure sizing repsects the dimensions explicitly stated */                  
-    margin: 0;                                             /* Reset Rule: sets all elements to 0 margin. Helpful for making consistent designs.*/
-    padding: 0;                                            /* Reset Rule: sets all elements to 0 padding. Helpful for making consistent designs.*/                                                      
+    box-sizing: border-box;             
+    margin: 0;
+    padding: 0;                                                    
 }
-
 
 .grid {
     display: grid;                                                                       
     grid-template-columns: minmax(150px, 1fr) minmax(50%, 1fr) minmax(150px, 1fr);      
-    grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr) minmax(50px, 100px);
-    height: 100vh;  
+    grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr);
+    height: 100vh; 
     grid-column-gap: 0;                                     
     grid-row-gap: 0;   
     grid-template-areas:
     "item1 item1 item1"
     "item2 item3 item4"   
-    "item5 item5 item5"
+
     ;                     
 }
 
@@ -36,7 +35,8 @@
 
         .item4 {
             grid-area: item4;
-            background-color: lightslategrey;   
+            background: linear-gradient(#576a9c, #604484);
+            border-radius: 5px;
         }
 
         .item5 {
@@ -57,7 +57,8 @@
     "nested1 nested1"
     "nested2 nested2"
     "nested3 nested4"
-    ;                
+    ;   
+    padding-bottom: 6px;              
 }
 
         .nested1 {
