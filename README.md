@@ -100,11 +100,13 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 
 
 .grid {
-    display: grid;                                                                                   /* Display property type */   
+    display: grid;                                                                                   /* Display property type */
     grid-template-columns: minmax(150px, 1fr) minmax(50%, 1fr) minmax(150px, 1fr);                   /* Column widths with minmax setting smallest and largest scales */
     grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr) minmax(50px, 100px);                  /* Row height with minmax setting shortest to tallest scales */
-    height: 100vh;                                                                                   /* Height expressed in full viewport height (i.e. 100vh) */                         grid-column-gap: 0;                                                                              /* Veritcal spacing between columns */                              
-    grid-row-gap: 0;                                                                                 /* Horizontal spacing between rows */                                               grid-template-areas:                                                                             /* Specifies the areas wihin the grid layout*/
+    height: 100vh;                                                                                   /* Height expressed in full viewport height (i.e. 100vh) */
+    grid-column-gap: 0;                                                                              /* Veritcal spacing between columns */
+    grid-row-gap: 0;                                                                                 /* Horizontal spacing between rows */
+    grid-template-areas:                                                                             /* Specifies the areas wihin the grid layout*/
     "item1 item1 item1"                                                                        
     "item2 item3 item4"   
     "item5 item5 item5"
