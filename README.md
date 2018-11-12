@@ -79,7 +79,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 
 ## CSS Grid Boilerplate
 
-### Basic CSS Grid HTML
+### Boilerplate CSS Grid HTML
 ```
     <main class="grid">
         <section class="item1">1</section>
@@ -89,7 +89,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         <section class="item5">5</section>
     </main>
 ```
-### Basic CSS Grid CSS Rulesets
+### Boilerplate CSS Grid 
 ```
                                                                                                     /* Notes */
 * { 
@@ -139,6 +139,71 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         }
 ```
 
+### Boilerplate NESTED Grid HTML
+```
+    <main class="grid">
+        <section class="item1">1</section>
+        <section class="item2">2</section>
+        <section class="item3">
+            <div class="nestedgrid">  
+                <div class="nested1">3.1</div>
+                <div class="nested2">3.2</div>
+                <div class="nested3">3.3</div>
+                <div class="nested4">3.4</div>
+            </div>
+        </section>
+        <section class="item4">4</section>
+        <section class="item5">5</section>
+    </main>
+```
+### Boilerplate NESTED Grid CSS
+```
+.nestedgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    margin: 4px;
+    grid-column-gap: 4px;                                     
+    grid-row-gap: 4px;   
+    grid-template-areas:
+    "nested1 nested1"
+    "nested2 nested2"
+    "nested3 nested4"
+    ;                
+}
+
+        .nested1 {
+            grid-area: nested1;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nested2 {
+            grid-area: nested2;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nested3 {
+            grid-area: nested3;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nested4 {
+            grid-area: nested4;
+            background-color: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+```
 
 
 
