@@ -6,37 +6,37 @@
 
 .grid {
     display: grid;                                                                       
-    grid-template-columns: minmax(150px, 1fr) minmax(50%, 1fr) minmax(150px, 1fr);      
-    grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr);
+    grid-template-columns: 1fr;      
+    grid-template-rows: minmax(50px, 10%) minmax(150px, 30%) minmax(200px, 30%) minmax(150px, 30%);
     height: 100vh; 
     grid-column-gap: 0;                                     
     grid-row-gap: 0;   
     grid-template-areas:
-    "item1 item1 item1"
-    "item2 item3 item4"   
-
+    "item1"
+    "item2"
+    "item3"
+    "item4"  
     ;                     
 }
 
         .item1 {
             grid-area: item1;
-            background-color: lightblue;
+            background: linear-gradient(#e6d67f, #d7dba1);
         }
 
         .item2 {
             grid-area: item2;
-            background-color: lightpink;   
+            background: linear-gradient(#c28fae, #8a8888);
         }
 
         .item3 {
             grid-area: item3;
-            background-color: lightcyan;
+            background: linear-gradient(#ffffff, #ffffff);
         }
 
         .item4 {
             grid-area: item4;
-            background: linear-gradient(#576a9c, #604484);
-            border-radius: 5px;
+            background: linear-gradient(#89b1d3, #747475);
         }
 
         .item5 {
@@ -50,15 +50,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    margin: 4px;
-    grid-column-gap: 4px;                                     
-    grid-row-gap: 4px;   
+    grid-column-gap: 0;                                     
+    grid-row-gap: 0;   
     grid-template-areas:
     "nested1 nested1"
     "nested2 nested2"
     "nested3 nested4"
     ;   
-    padding-bottom: 6px;              
+            
 }
 
         .nested1 {
@@ -92,3 +91,19 @@
             align-items: center;
             justify-content: center;
         }
+
+ @media only screen and (min-width: 640px) {
+            
+    .grid {
+        display: grid;                                                                       
+        grid-template-columns: minmax(150px, 1fr) minmax(50%, 1fr) minmax(150px, 1fr);      
+        grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr);
+        grid-column-gap: 0;                                     
+        grid-row-gap: 0;   
+        grid-template-areas:
+        "item1 item1 item1"
+        "item2 item3 item4"   
+        ;                     
+    }
+    
+}
