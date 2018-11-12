@@ -7,7 +7,7 @@
 .grid {
     display: grid;                                                                       
     grid-template-columns: 1fr;      
-    grid-template-rows: minmax(50px, 10%) minmax(150px, 30%) minmax(200px, 30%) minmax(150px, 30%);
+    grid-template-rows: minmax(50px, 25%) minmax(150px, 25%) minmax(200px, 25%) minmax(150px, 25%);
     height: 100vh; 
     grid-column-gap: 0;                                     
     grid-row-gap: 0;   
@@ -21,7 +21,7 @@
 
         .item1 {
             grid-area: item1;
-            background: linear-gradient(#e6d67f, #d7dba1);
+            background: linear-gradient(#e6d67f, #b9bd8a);
         }
 
         .item2 {
@@ -62,7 +62,7 @@
 
         .nested1 {
             grid-area: nested1;
-            background-color: blue;
+            background-color: lightblue;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,7 +70,7 @@
 
         .nested2 {
             grid-area: nested2;
-            background-color: red;
+            background-color: lightcoral;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,7 +78,7 @@
 
         .nested3 {
             grid-area: nested3;
-            background-color: green;
+            background-color: lightseagreen;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -86,7 +86,7 @@
 
         .nested4 {
             grid-area: nested4;
-            background-color: purple;
+            background-color: lightgoldenrodyellow;
             display: flex;
             align-items: center;
             justify-content: center;
