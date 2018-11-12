@@ -5,7 +5,8 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 
 <br>
 
-## What are the key terms we need to know?
+## Basics of CSS Grid 
+
 * **Grid CONTAINERS**
    * The grid container establishes how the grid will be formatted.
    * It also manages how all the child elements are spaced, sized, and aligned.
@@ -50,7 +51,9 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 
 <br>
 
-minmax: 
+## Declarations to know
+
+### minmax 
 
 * This lets you set the grid track's minimum and maxium size.
 * minimum size will let you make sure the content doesnt become to small or narrow where you cant see it.
@@ -68,8 +71,72 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 ```
 * In the example above, there are three tracks.  the first track has a minmax function where the column will collapse no smaller than 300px.  The max is 1fr, maeing it will exand as needed.
 
+...
+...
+...
+
+<br>
+
+## CSS Grid Boilerplate
+
+### Basic CSS Grid HTML
+```
+    <main class="grid">
+        <section class="item1">1</section>
+        <section class="item2">2</section>
+        <section class="item3">3</section>
+        <section class="item4">4</section>
+        <section class="item5">5</section>
+    </main>
+```
+### Basic CSS Grid CSS Rulesets
+```
+* {
+    box-sizing: border-box;                 /* Make sure sizing repsects the dimensions explicitly stated */                  
+    margin: 0;                              /* Reset Rule: sets all elements to 0 margin. Helpful for making consistent designs.*/
+    padding: 0;                             /* Reset Rule: sets all elements to 0 padding. Helpful for making consistent designs.*/                                                      
+}
 
 
+.grid {
+    display: grid;                                                                             /* Display property type*/   
+    grid-template-columns: minmax(150px, 1fr) minmax(50%, 1fr) minmax(150px, 1fr);             /* Column widths with minmax setting smallest and largest scales */
+    grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr) minmax(50px, 100px);            /* Row height with minmax setting shortest to tallest scales */
+    height: 100vh;                                                                               
+    grid-column-gap: 0;                                     
+    grid-row-gap: 0;   
+    grid-template-areas:
+    "item1 item1 item1"
+    "item2 item3 item4"   
+    "item5 item5 item5"
+    ;                     
+}
+
+        .item1 {
+            grid-area: item1;
+            background-color: lightblue;
+        }
+
+        .item2 {
+            grid-area: item2;
+            background-color: lightpink;   
+        }
+
+        .item3 {
+            grid-area: item3;
+            background-color: lightcyan;
+        }
+
+        .item4 {
+            grid-area: item4;
+            background-color: lightslategrey;   
+        }
+
+        .item5 {
+            grid-area: item5;
+            background-color: lightyellow;
+        }
+```
 
 
 

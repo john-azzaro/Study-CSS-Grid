@@ -7,8 +7,8 @@
 
 .grid {
     display: grid;                                                                       
-    grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);      
-    grid-template-rows: minmax(100px, 125px) 70% auto;
+    grid-template-columns: minmax(150px, 1fr) minmax(50%, 1fr) minmax(150px, 1fr);      
+    grid-template-rows: minmax(50px, 100px) minmax(300px, 1fr) minmax(50px, 100px);
     height: 100vh;  
     grid-column-gap: 0;                                     
     grid-row-gap: 0;   
@@ -19,28 +19,75 @@
     ;                     
 }
 
+        .item1 {
+            grid-area: item1;
+            background-color: lightblue;
+        }
 
-.item1 {
-    grid-area: item1;
-    background-color: lightblue;
+        .item2 {
+            grid-area: item2;
+            background-color: lightpink;   
+        }
+
+        .item3 {
+            grid-area: item3;
+            background-color: lightcyan;
+        }
+
+        .item4 {
+            grid-area: item4;
+            background-color: lightslategrey;   
+        }
+
+        .item5 {
+            grid-area: item5;
+            background-color: lightyellow;
+        }
+
+/* NESTED GRID */
+
+.nestedgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    margin: 4px;
+    grid-column-gap: 4px;                                     
+    grid-row-gap: 4px;   
+    grid-template-areas:
+    "nested1 nested1"
+    "nested2 nested2"
+    "nested3 nested4"
+    ;                
 }
 
-.item2 {
-    grid-area: item2;
-    background-color: lightcoral;   
-}
+        .nested1 {
+            grid-area: nested1;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.item3 {
-    grid-area: item3;
-    background-color: aquamarine;
-}
+        .nested2 {
+            grid-area: nested2;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.item4 {
-    grid-area: item4;
-    background-color: lightslategrey;   
-}
+        .nested3 {
+            grid-area: nested3;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.item5 {
-    grid-area: item5;
-    background-color: lightyellow;
-}
+        .nested4 {
+            grid-area: nested4;
+            background-color: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
