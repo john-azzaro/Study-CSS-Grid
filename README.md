@@ -71,6 +71,27 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 ```
 * In the example above, there are three tracks.  the first track has a minmax function where the column will collapse no smaller than 300px.  The max is 1fr, maeing it will exand as needed.
 
+
+### repeat
+
+* Repeat is ahsortcut for repeating patterns of tracks so you dont have to write the sam values over again.
+* Can be used in the ```grid-template-columns ``` and ``` grid-template-rows```.
+* So when do you use the repeat function.
+    * Suppose you have a grid template column declaration with 6 columns:
+    ```
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    ```
+    * create a repeat function and in the call signature, pass in the following values:
+        * Repetition value: The number of tracks you want it to repeat.  In this case, we want 6.
+        * Repeat value: The size you want to repeat.  In this case, its 1fr.
+    * So this function repeats the 1fr six times in the layout.
+    ```
+    grid-template-columns: repeat(6, 1fr)
+    ```
+    * If you have some columns with different values, but a part that can use repeat, you can do this:
+    ```
+    grid-template-columns: 3fr repeat(3, 1fr);
+    ```
 ...
 ...
 ...
