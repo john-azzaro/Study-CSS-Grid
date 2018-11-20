@@ -108,7 +108,6 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
     align-items: center;
     font-size: 8.0vw;
   }
-  
   ```
 
 <br>
