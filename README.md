@@ -113,9 +113,9 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 
 <br>
 
-## CSS Grid Boilerplate
+## CSS Grid Example
 
-### Boilerplate CSS Grid HTML
+### Example CSS Grid HTML
 ```
     <main class="grid">
         <section class="item1">1</section>
@@ -125,7 +125,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         <section class="item5">5</section>
     </main>
 ```
-### Boilerplate CSS Grid 
+### Example CSS Grid 
 ```
                                                                                                     /* Notes */
 * { 
@@ -175,7 +175,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         }
 ```
 
-### Boilerplate NESTED Grid HTML
+### Example NESTED Grid HTML
 ```
     <main class="grid">
         <section class="item1">1</section>
@@ -192,7 +192,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         <section class="item5">5</section>
     </main>
 ```
-### Boilerplate NESTED Grid CSS
+### Example NESTED Grid CSS
 ```
 .nestedgrid {
     display: grid;
