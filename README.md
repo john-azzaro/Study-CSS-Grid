@@ -9,11 +9,14 @@ Here are a few questions from the study to consider:
 * [](#)
 * [Screenshots](#Screenshots)
 
-## What are the basics of CSS Grid. 
+## What are the basics of CSS Grid.
+ The grid CONTAINER (".grid") contains all the child ITEMS within it.  The grid template COLUMNS and gird template ROWS provide us with numbered grid LINES that we use for positioning the items. 
 
 ### Grid CONTAINERS establish the grid
 ----------------
-The grid container establishes how the grid will be formatted. It also manages how all the child elements are spaced, sized, and aligned. Additionally, for uniformity, use the ".grid" class. 
+   * The grid container establishes how the grid will be formatted.
+   * It also manages how all the child elements are spaced, sized, and aligned. 
+   * Additionally, for uniformity, use the ".grid" class. 
 
 <br>
 
@@ -30,7 +33,10 @@ Everything inside the grid container are the grid container's children
     </main>
    ```
 
-* **Grid LINES**
+<br>
+
+### Grid LINES dissect the container space.
+-----------------
    * The grid is formed by intersecting sets of hrozontal and veritcal lines call **grid lines**.
    * Grid lines divide the contianer space into **columns and rows**, or areas in which items are aligned and placed.
    * **Horizontal grid lines** position **rows**.
@@ -51,9 +57,6 @@ Everything inside the grid container are the grid container's children
      3   ___________________________________         \\ Third horizontal row grid line.
     ```
 
-
-* SUMMARY: 
-  The grid CONTAINER (".grid") contains all the child ITEMS within it.  The grid template COLUMNS and gird template ROWS provide us with numbered grid LINES that we use for positioning the items.
 
 <br>
 
