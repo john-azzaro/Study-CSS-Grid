@@ -7,7 +7,7 @@ Here are a few questions from the study to consider:
 
 * [What are the basics of CSS Grid.](#What are the basics of CSS Grid.)
 * [What are important declarations to know when using grid?](#What are important declarations to know when using grid?)
-* [](#)
+* [What are some basic examples of CSS Grid](#What are some basic examples of CSS Grid)
 * [](#)
 * [Screenshots](#Screenshots)
 
@@ -81,24 +81,24 @@ grid-template-columns: minmax() 1fr 1fr;   // 3 tracks, first is a minmax, secon
 grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ; 
 ```
 
-### repeat
+### Repeat is a shortcut for repeating patterns of tracks.
 --------------
-* Repeat is ahsortcut for repeating patterns of tracks so you dont have to write the sam values over again.
+* Repeat is a shortcut of tracks so you dont have to write the sam values over again.
 * Can be used in the ```grid-template-columns ``` and ``` grid-template-rows```.
 * So when do you use the repeat function.
     * Suppose you have a grid template column declaration with 6 columns:
-    ```
+    ```css
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     ```
     * create a repeat function and in the call signature, pass in the following values:
         * Repetition value: The number of tracks you want it to repeat.  In this case, we want 6.
         * Repeat value: The size you want to repeat.  In this case, its 1fr.
     * So this function repeats the 1fr six times in the layout.
-    ```
+    ```css
     grid-template-columns: repeat(6, 1fr)
     ```
     * If you have some columns with different values, but a part that can use repeat, you can do this:
-    ```
+    ```css
     grid-template-columns: 3fr repeat(3, 1fr);
     ```
 ...
@@ -107,9 +107,9 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 
 <br>
 
-## CSS Grid Boilerplate
+## What are some basic examples of CSS Grid
 
-### Boilerplate CSS Grid HTML
+### Example of CSS Grid HTML
 ```
     <main class="grid">
         <section class="item1">1</section>
@@ -119,7 +119,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         <section class="item5">5</section>
     </main>
 ```
-### Boilerplate CSS Grid 
+### Example of CSS Grid 
 ```
                                                                                                     /* Notes */
 * { 
@@ -169,7 +169,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         }
 ```
 
-### Boilerplate NESTED Grid HTML
+### Example of NESTED Grid HTML
 ```
     <main class="grid">
         <section class="item1">1</section>
@@ -186,7 +186,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         <section class="item5">5</section>
     </main>
 ```
-### Boilerplate NESTED Grid CSS
+### Example of NESTED Grid CSS
 ```
 .nestedgrid {
     display: grid;
