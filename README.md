@@ -5,6 +5,8 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 
 Here are a few questions from the study to consider:
 
+* [What are the basics of CSS Grid.](#What are the basics of CSS Grid.)
+* [What are important declarations to know when using grid?](#What are important declarations to know when using grid?)
 * [](#)
 * [](#)
 * [Screenshots](#Screenshots)
@@ -60,29 +62,27 @@ Everything inside the grid container are the grid container's children
 
 <br>
 
-## Declarations to know
+## What are important declarations to know when using grid?
 
-### minmax 
-
-* This lets you set the grid track's minimum and maxium size.
+### minmax lets you set the grid track's minimum and maxium size.
+------------
 * minimum size will let you make sure the content doesnt become to small or narrow where you cant see it.
 * maximum size will let you make sure the content doesnt become to wide or tall.
 * using minmax will help you build layouts that adapt to a wide range of screen sizes.
-
 * to use minmax, use it in the ``` grid-template-columns ``` declaration.
-```
+```css
 grid-template-columns: minmax() 1fr 1fr;   // 3 tracks, first is a minmax, second and third are set to 1fr.
 ```
+
 * minmax accepts two values, a minimum (first) and a maximum (last).  
 * the value for min needs to be smaller than the value for maximum (otherwise browser will ignore the max value).
-```
+* In the example below, there are three tracks.  the first track has a minmax function where the column will collapse no smaller than 300px.  The max is 1fr, maeing it will exand as needed.
+```css
 grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ; 
 ```
-* In the example above, there are three tracks.  the first track has a minmax function where the column will collapse no smaller than 300px.  The max is 1fr, maeing it will exand as needed.
-
 
 ### repeat
-
+--------------
 * Repeat is ahsortcut for repeating patterns of tracks so you dont have to write the sam values over again.
 * Can be used in the ```grid-template-columns ``` and ``` grid-template-rows```.
 * So when do you use the repeat function.
