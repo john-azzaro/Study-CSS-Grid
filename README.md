@@ -9,14 +9,16 @@ Here are a few questions from the study to consider:
 * [](#)
 * [Screenshots](#Screenshots)
 
-## Basics of CSS Grid 
+## What are the basics of CSS Grid. 
 
-* **Grid CONTAINERS**
+### Grid CONTAINERS establish the grid
+----------------
    * The grid container establishes how the grid will be formatted.
    * It also manages how all the child elements are spaced, sized, and aligned.
    * For uniformity, use the ".grid" class. 
    
-* **Grid ITEMS**
+### Grid ITEMS are the children of the grid parent.
+---------------
    * Everything inside the grid container are the grid container's children
    
    Example:
@@ -231,23 +233,3 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-## Setting Up The Grid Container
-
-In your HTML document, create a parent container and a few child grid items.
-```
-     <main class="">
-        <section class="item">1</section>
-        <section class="item">2</section>
-        <section class="item">3</section>
-    </main>
-```
