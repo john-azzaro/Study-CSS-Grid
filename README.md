@@ -5,10 +5,9 @@ CSS Grid study is a practical examination of CSS Grid, a two dimensional layout 
 
 Here are a few questions from the study to consider:
 
-* [What are the basics of CSS Grid.](#What are the basics of CSS Grid.)
-* [What are important declarations to know when using grid?](#What are important declarations to know when using grid?)
-* [What are some basic examples of CSS Grid](#What are some basic examples of CSS Grid)
-* [](#)
+* [What are the basics of CSS Grid.](#What-are-the-basics-of-CSS-Grid)
+* [What are important declarations to know when using grid?](#What-are-important-declarations-to-know-when-using-grid)
+* [What are some basic examples of CSS Grid](#What-are-some-basic-examples-of-CSS-Grid)
 * [Screenshots](#Screenshots)
 
 ## What are the basics of CSS Grid.
