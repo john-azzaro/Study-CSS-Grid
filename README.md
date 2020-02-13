@@ -110,7 +110,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 ## What are some basic examples of CSS Grid
 
 ### Example of CSS Grid HTML
-```
+```HTML
     <main class="grid">
         <section class="item1">1</section>
         <section class="item2">2</section>
@@ -120,7 +120,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
     </main>
 ```
 ### Example of CSS Grid 
-```
+```CSS
                                                                                                     /* Notes */
 * { 
     box-sizing: border-box;                                                                         /* Make sure sizing repsects the dimensions explicitly stated */                  
@@ -170,7 +170,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
 ```
 
 ### Example of NESTED Grid HTML
-```
+```HTML
     <main class="grid">
         <section class="item1">1</section>
         <section class="item2">2</section>
@@ -187,7 +187,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
     </main>
 ```
 ### Example of NESTED Grid CSS
-```
+```CSS
 .nestedgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
