@@ -13,16 +13,16 @@ Here are a few questions from the study to consider:
 
 ### Grid CONTAINERS establish the grid
 ----------------
-   * The grid container establishes how the grid will be formatted.
-   * It also manages how all the child elements are spaced, sized, and aligned.
-   * For uniformity, use the ".grid" class. 
-   
+The grid container establishes how the grid will be formatted. It also manages how all the child elements are spaced, sized, and aligned. Additionally, for uniformity, use the ".grid" class. 
+
+<br>
+
 ### Grid ITEMS are the children of the grid parent.
 ---------------
-   * Everything inside the grid container are the grid container's children
+Everything inside the grid container are the grid container's children
    
    Example:
-   ```
+   ```HTML
     <main class="grid">                             \\ The main is the parent container
         <section class="childone">...</section>     \\ The three sections are the child items 
         <section class="childtwo">...</section>
