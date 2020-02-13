@@ -235,4 +235,7 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
         }
 ```
 
+## Screenshots
+![grid1](https://user-images.githubusercontent.com/37447586/74405120-31ff0b80-4de1-11ea-92be-225d0155d8e6.png)
+![grid2](https://user-images.githubusercontent.com/37447586/74405121-3297a200-4de1-11ea-8b5e-6bb7f8339edc.png)
 
