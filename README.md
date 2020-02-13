@@ -101,8 +101,23 @@ grid-template-columns: minmax(300px, 1fr) 1fr 1fr; ;
     grid-template-columns: 3fr repeat(3, 1fr);
     ```
 ...
-...
-...
+
+
+## CSS Grid FAQ:
+
+### How do I center text (horizontally and vertically)?
+   > To center text horzontally and veritcally, you need to use ``` display: flex```.
+   > ```justify-content``` and ```align-items``` will put text dead-center.
+   
+  ```
+  .main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8.0vw;
+  }
+  ```
 
 <br>
 
