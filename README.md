@@ -3,7 +3,11 @@
 ## What is the CSS Grid Study?
 CSS Grid study is a practical examination of CSS Grid, a two dimensional layout system which allows you to control positioning, sizing, and spacing of content.  Anything declared in the grid will adapt to the columns and rows defined.
 
-<br>
+Here are a few questions from the study to consider:
+
+* [](#)
+* [](#)
+* [Screenshots](#Screenshots)
 
 ## Basics of CSS Grid 
 
